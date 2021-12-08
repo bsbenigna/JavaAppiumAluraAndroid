@@ -9,24 +9,13 @@
 
 - Framework interação com elementos mobile - [Appium 1.13.0](http://appium.io/  "Appium")
 
-
-![alt text](https://i.imgur.com/FESL5Yr.png)
-
-**Utilizar novo aplicativo para ser testado**
+**Aplicativo para ser testado**
 
 - No diretório "resources/app" :  Utilizada para armazenar os arquivos do aplicativo (.apk)
-
-![alt text](https://imgur.com/c75q6dW.png)
-
-**Flows**
-
-Flows ou fluxos, é a camada onde há um agrupamento de atividades, ações e validações para determinada página do sistema. Um exemplo prático é um fluxo de realizarLoginAmbienteTesteZero onde são necessárias quatro ações de preencherLogin, preencherSenha, clicarBotaoLogin e selecionar o ambiente. A utilidade é facilitar o reuso de ações.
 
 **Pages**
 
 Mapeamento dos elementos bem como as ações simples que podem ser através do Flows.
-
-![alt text](https://i.imgur.com/LXFW5LB.png)
 
 OBS: Com a utilizacao do [AppiumFieldDecorator](https://appium.github.io/java-client/io/appium/java_client/pagefactory/AppiumFieldDecorator.html"AppiumFieldDecorator") é possivel utilizar os recursos de "@AndroidFindBy" podendo assim, utilizar diferentes formas de localização de um elemento dependendo do sistema operacional utilizado pelo device.
 
@@ -50,21 +39,11 @@ Camada ligada ao core da arquitetura subdivida em três em classes principais:
 
 - DriverFactory - classe com instância do driver bem como a escolha do sistema operacional mobile e configurações que serão utilizadas. Utilize os parâmetros no arquivo **globalParameters.properties** confome a sua forma de execução:
 
-  
-
-![enter image description here](https://i.imgur.com/Pxd31to.png)
-
-  
-
 Arquivo DriverFactory para execuções:
 
 Permite executar testes Android:
 
 - Device real Local utilizando o apk
-
-
-
-![alt text](https://i.imgur.com/rvoTMuJ.png)
 
 
 Dicas de capabilities:
